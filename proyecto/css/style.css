@@ -98,7 +98,7 @@ main h2{
     flex-basis: 100%;
 }
 article{
-    width: 310px;
+    width: 315px;
 }
 .tabla{
     width: 200px;
@@ -106,4 +106,7 @@ article{
 }
 article h2{
     text-align:left;
+}
+.productos-vendidos h1 {
+    text-align: center;
 }
