@@ -1,0 +1,109 @@
+
+header{
+    background-color: #21499a;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+}
+.registro{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    padding: 1%;
+    margin: 1%;
+    color: #fff;
+    list-style: none;
+}
+.menu{
+    width: 15%;
+}
+.pos{
+    text-decoration: none;
+    color: #fff;
+}
+.logo{
+border-radius: 70px;
+width: 100px;
+height: 100px;
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-start;
+}
+.marca{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+form{
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+.titulo{
+    font-size: 2rem;
+    color: #fff;
+}
+nav.seccion ul{
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+}
+nav.seccion li{
+    border-bottom: 1px solid #fff;
+}
+.categorias{
+    display: block;
+    padding: 1px;
+    color: #21499a;
+}
+.categorias{
+    text-decoration: none;
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+}
+article {
+    width: 150px;
+    justify-content: space-between;
+}
+.tabla{
+    width: 150px;
+    height: 150px;
+}
+main{
+    width: 100%;
+}
+.contenido{
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+}
+.productos-destacados{
+    margin-top: 20px;
+    flex-basis: 100%;
+}
+main h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.productos-vendidos{
+    margin-top: 20px;
+    flex-basis: 100%;
+}
+article{
+    width: 310px;
+}
+.tabla{
+    width: 200px;
+    height: 200px;
+}
+article h2{
+    text-align:left;
+}
