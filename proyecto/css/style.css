@@ -7,6 +7,14 @@ header{
     align-items: center;
     padding: 1%;
 }
+footer{
+    background-color: #21499a;
+    height: 50px;
+    color:antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .registro{
     display: flex;
     justify-content: space-between;
@@ -63,12 +71,6 @@ nav.seccion li{
 .categorias{
     text-decoration: none;
 }
-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    width: 100%;
-}
 article {
     width: 150px;
     justify-content: space-between;
@@ -86,16 +88,32 @@ main{
     width: 100%;
 }
 .productos-destacados{
-    margin-top: 20px;
-    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+}
+.productos-destacados h1{
+    width: 100%;
+    margin-bottom: 24px;
+    text-align: center;
+    text-decoration: underline;
 }
 main h2{
     text-align: center;
     margin-bottom: 20px;
 }
-.productos-vendidos{
-    margin-top: 20px;
-    flex-basis: 100%;
+.productos-vendidos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+}
+.productos-vendidos h1{
+    width: 100%;
+    margin-bottom: 24px;
+    text-align: center;
+    text-decoration: underline;
 }
 article{
     width: 315px;
@@ -108,5 +126,57 @@ article h2{
     text-align:left;
 }
 .productos-vendidos h1 {
+    width: 100%;
+    margin-bottom: 24px;
+}
+.ruta{
+    text-decoration: none;
+    margin-bottom: 12px;
+    display: block;
+    color: #21499a;
+}
+.prod{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 32px;
+}
+.prod ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+.prod .info-producto{
+    flex: 1;
+    min-width: 260px;
+}
+.prod ul li{
+    margin-right: 12px;
+}
+main .contenido{
+    display: flex;
+    align-items: flex-start;
+}
+.precios{
+    font-size: x-large;
+    color: #c96b1e
+}
+.unidades{
+    color: #75de19;
+}
+.reviews h2{
     text-align: center;
+    text-decoration: underline;
+}
+.lista-reviews{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ver-mas{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #21499a;
+    color: #fff;
+    padding: 8px 16px;
 }
