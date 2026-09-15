@@ -159,10 +159,10 @@ main .contenido{
 }
 .precios{
     font-size: x-large;
-    color: #c96b1e
+    color: #38c91e
 }
 .unidades{
-    color: #75de19;
+    color: #eebd1e;
 }
 .reviews h2{
     text-align: center;
@@ -179,4 +179,13 @@ main .contenido{
     background-color: #21499a;
     color: #fff;
     padding: 8px 16px;
+}
+.resalta{
+    background-color: #21499a;
+    color: #fff;
+}
+.resultado{
+    text-align:center;
+    margin-bottom: 20px;
+    width: 100%;
 }
