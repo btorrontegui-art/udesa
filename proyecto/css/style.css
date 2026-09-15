@@ -189,3 +189,10 @@ main .contenido{
     margin-bottom: 20px;
     width: 100%;
 }
+form.login {
+    display: block;
+    margin: auto;
+    padding: 32px;
+    width: 400px;
+    align-self: center;
+}
