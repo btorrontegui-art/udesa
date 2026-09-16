@@ -189,10 +189,22 @@ main .contenido{
     margin-bottom: 20px;
     width: 100%;
 }
-form.login {
-    display: block;
-    margin: auto;
-    padding: 32px;
-    width: 400px;
-    align-self: center;
+.login{
+    display: flex;
+    align-items:center ;
+    flex-wrap: wrap;
+}
+.tarjeta-login {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+}
+.tarjeta-login form {
+    display: flex;
+    flex-direction: column;
+}
+.campo{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
 }
