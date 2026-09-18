@@ -42,7 +42,7 @@ justify-content: flex-start;
 .marca{
     display: flex;
     align-items: center;
-    gap: 12px;
+    margin-bottom: 12px;
 }
 form{
     display: flex;
@@ -190,6 +190,7 @@ main .contenido{
     width: 100%;
 }
 .login{
+    flex-direction: column;
     display: flex;
     align-items:center ;
     flex-wrap: wrap;
