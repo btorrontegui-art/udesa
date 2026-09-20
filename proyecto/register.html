@@ -2,31 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-<link href="./css/style.css" rel="stylesheet">
-<title> Proyecto Integrador</title>
+    <link href="./css/style.css" rel="stylesheet">
+    <title> Proyecto Integrador</title>
 </head>
-    <body>
-       <header>
+<body>
+    <header>
         <div class="marca">
-        <a href="index.html">
-            <img src="./img/logo.png" class="logo"></a>
-         <h1 class="titulo">Wax Wave</h1>
-       </div>
+            <a href="index.html">
+                <img src="./img/logo.png" class="logo">
+            </a>
+            <h1 class="titulo">Wax Wave</h1>
+        </div>
         <form action="search-results.html" method="get">
             <input type="text" name="search" placeholder="Buscar productos...">
             <button type="submit">Buscar</button>
-        </form> 
+        </form>
         <nav class="menu">
-        <ul class="registro">
-            <li><a href="index.html" class="pos">Home</a></li>
-            <li><a href="login.html" class="pos">Login</a></li>
-            <li><a href="registro.html" class="pos">Registro</a></li>
-        </ul>
-         </nav>
+            <ul class="registro">
+                <li><a href="index.html" class="pos">Home</a></li>
+                <li><a href="login.html" class="pos">Login</a></li>
+                <li><a href="registro.html" class="pos">Registro</a></li>
+            </ul>
+        </nav>
     </header>
+
     <main class="contenido">
         <nav class="seccion">
-            <h1> Categorias</h1>
+            <h1>Categorias</h1>
             <ul>
                 <li><a href="category.html" class="categorias">Tablas de Surf</a></li>
                 <li><a href="category.html" class="categorias">Trajes de Neopreno</a></li>
@@ -54,30 +56,36 @@
                 <li><a href="category.html" class="categorias">Billeteras</a></li>
             </ul>
         </nav>
-        </main>
-<form action="login.html" method="get" class="login">
-    <h1>Crear cuenta</h1>
-    <label for="email">Email</label>
-    <br>
-    <input type="email" id="email" name="email" placeholder="tu@email.com">
-    <br>
-    <label for="password">Contraseña</label>
-    <br>
-    <input type="password" id="password" name="password" placeholder="......">
-    <br>
-    <label for="password2">Repetir contraseña</label>
-    <br>
-    <input type="password" id="password2" name="password2" placeholder=".......">
-    <br><br>
-    <input type="checkbox" id="terminos" name="terminos">
-    <label for="terminos">Acepto términos y condiciones</label>
-    <br><br>
-    <button type="submit">Registrarme</button>
-    <br><br>
-    <a href="login.html">Ya tengo una cuenta</a>
-</form>
-<footer>
-        <p> © 2026 - Wax Wav</p> <p> Integrantes: Tiago Santos Gueudet - Benito Torrontegui </p>
+
+        <div class="login">
+            <form action="login.html" method="get" class="tarjeta-login">
+                <h1>Crear cuenta</h1>
+                <div class="campo">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="tu@email.com">
+                </div>
+                <div class="campo">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" placeholder="......">
+                </div>
+                <div class="campo">
+                    <label for="password2">Repetir contraseña</label>
+                    <input type="password" id="password2" name="password2" placeholder=".......">
+                </div>
+                <input type="checkbox" id="terminos" name="terminos">
+                <label for="terminos">Acepto términos y condiciones</label>
+                <br><br>
+                <button type="submit">Registrarme</button>
+                <br><br>
+                <a href="login.html">Ya tengo una cuenta</a>
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 - Wax Wav</p>
+        <p>Integrantes: Tiago Santos Gueudet - Benito Torrontegui</p>
     </footer>
-<head>
+</body>
 </html>
