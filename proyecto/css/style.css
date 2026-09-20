@@ -205,8 +205,43 @@ main .contenido{
     display: flex;
     flex-direction: column;
 }
-.campo{
+.campos{
     display: flex;
     flex-direction: column;
     margin-bottom: 16px;
+}
+.tarjeta-login input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.login {
+    justify-content: center;
+}
+.tarjeta-login {
+    align-items: center;
+}
+.tarjeta-login a {
+    margin-top: 12px;
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    .contenido {
+        flex-direction: column;
+    }
+    nav.seccion {
+        display: none;
+    }
+    .login {
+        width: 100%;
+    }
+    .tarjeta-login {
+        width: 90%;
+    }
+    .registro {
+        flex-direction: column;
+        align-items: center;
+    }
 }
