@@ -249,3 +249,74 @@ main .contenido{
         align-items: center;
     }
 }
+@media (max-width: 420px) {
+    header {
+        flex-direction: column;
+        padding: 2%;
+    }
+    .titulo{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    .logo{
+        width: 70px;
+        height: 70px;
+    }
+    .marca{
+        flex-direction: column;
+        text-align: center;
+    }
+    form{
+        margin-right: 0;
+        margin-top: 8px;
+    }
+    .registro{
+        flex-direction: column;
+        align-items: center;
+        padding: 2%;
+    }
+    .contenido {
+        flex-direction: column;
+    }
+    aside.seccion {
+        display: none;
+    }
+    .productos-destacados,
+    .productos-vendidos{
+        justify-content: center;
+    }
+    article{
+        width: 100%;
+        justify-content: center;
+    }
+    .tabla{
+        width: 150px;
+        height: 150px;
+        margin: 0 auto 16px;
+        width: 200px;
+    }
+    .prod{
+        flex-direction: column;
+        padding: 16px;
+    }
+    .prod ul{
+        flex-direction: column;
+    }
+    .prod .info-producto{
+        min-width: 100%;
+    }
+    .login {
+        width: 100%;
+    }
+    .tarjeta-login {
+        width: 90%;
+    }
+    footer{
+        flex-direction: column;
+        height: auto;
+        padding: 8px;
+        text-align: center;
+    }
+    .tup { width: 220px;
+        height: 220px;}
+}
