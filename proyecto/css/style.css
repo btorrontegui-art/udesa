@@ -16,6 +16,31 @@ footer{
     align-items: center;
     margin-top: 5%;
 }
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.buscador{
+    display: flex;
+    align-items: center;    
+}
+.buscador input{
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    width: 200px;
+}
+.buscador button{
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #21499a;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-left: 10px;
+}
 .registro{
     display: flex;
     justify-content: space-between;
@@ -53,6 +78,7 @@ form{
 .titulo{
     font-size: 2rem;
     color: #fff;
+    text-decoration: none;
 }
 aside.seccion ul{
     list-style: none;
