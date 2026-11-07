@@ -3,7 +3,7 @@ let listaCategorias = document.querySelector('.seccion ul');
 fetch ("https://dummyjson.com/products/category-list")
 .then (function (response) {
     return response.json();
-})
+})  
 .then (function(data) {
     console.log(data);
 
@@ -20,8 +20,9 @@ listaCategorias.innerHTML = categorias;
     console.log("Error:", error);
 });
 
-let parametrosCategoria = new URLSearchParams(location.search);
-let categoriaElegida = parametrosCategoria.get("category");
+let queryString = location.search;
+let queryStringObj = new URLSearchParams(queryString);
+let categoriaElegida = queryStringObj.get("category");
 
 let tituloCategorias = document.querySelector(".productos-destacados h1");
 tituloCategorias.innerText = categoriaElegida;
