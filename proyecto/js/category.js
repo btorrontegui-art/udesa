@@ -15,10 +15,6 @@ for (let i=0; i< data.length; i++) {
     </li>`;
 }
 listaCategorias.innerHTML = categorias;
-})
-.catch (function (error) {
-    console.log("Error:", error);
-});
 
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
@@ -26,5 +22,12 @@ let categoriaElegida = queryStringObj.get("category");
 
 let tituloCategorias = document.querySelector(".productos-destacados h1");
 tituloCategorias.innerText = categoriaElegida;
+
+})
+.catch (function (error) {
+    console.log("Error:", error);
+});
+
+
  
 
