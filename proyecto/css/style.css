@@ -90,6 +90,22 @@ aside.seccion ul{
 aside.seccion li{
     border-bottom: 1px solid #fff;
 }
+article{
+    width: 220px;
+    margin: 10px;
+}
+article h2{
+    font-size: 2rem;
+}
+article p {
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.primeraCategoria{
+    text-decoration: none;
+
+}
 .categorias{
     display: block;
     padding: 1px;
@@ -98,16 +114,12 @@ aside.seccion li{
 .categorias{
     text-decoration: none;
 }
-article {
-    width: 150px;
-    justify-content: space-between;
-}
 .tabla{
     width: 150px;
     height: 150px;
 }
 .tabla{
-    margin-bottom: 16px;
+    margin-bottom: 10px;
     display: block;
 }
 main{
@@ -150,15 +162,9 @@ main h2{
     text-align: center;
     text-decoration: underline;
 }
-article{
-    width: 315px;
-}
 .tabla{
     width: 200px;
     height: 200px;
-}
-article h2{
-    text-align:left;
 }
 .productos-vendidos h1 {
     width: 100%;
@@ -214,6 +220,9 @@ main .contenido{
     background-color: #21499a;
     color: #fff;
     padding: 8px 16px;
+    width: 40%;
+    margin-bottom: 20px;
+    font-size: 1rem;
 }
 .resalta{
     background-color: #21499a;
