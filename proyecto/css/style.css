@@ -209,10 +209,14 @@ main .contenido{
     text-align: center;
     text-decoration: underline;
 }
+.rating{
+   font-weight: bold;
+   color: #21499a
+}
 .lista-reviews{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content:center;
 }
 .ver-mas{
     display: inline-block;
