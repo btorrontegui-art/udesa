@@ -227,6 +227,7 @@ main .contenido{
     width: 40%;
     margin-bottom: 20px;
     font-size: 1rem;
+    border-radius: 20px;
 }
 .resalta{
     background-color: #21499a;
