@@ -19,3 +19,14 @@ listaCategorias.innerHTML = categorias;
 .catch (function (error) {
     console.log("Error:", error);
 });
+
+let queryString = location.search;
+let queryStringObj = new URLSearchParams(queryString);
+let lupa = queryStringObj.get("search");
+let buscador = document.querySelector('.mensaje-buscador');
+
+if (lupa == "") {
+     buscador.innerText = "El campo de busqueda no puede estar vacio";
+} else if (lupa != null && lupa.length< 3) {
+    buscador.innerText = "El campo de busqueda debe tener al menos 3 caracteres";
+}
