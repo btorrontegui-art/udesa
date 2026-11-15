@@ -1,21 +1,19 @@
-let listaCategorias = document.querySelector('.seccion ul');
+let formulario = document.querySelector(".formulario-login");
+let campoEmail = document.querySelector("#email");
+let campoPassword = document.querySelector("#password");
+let mensajeError = document.querySelector(".mensaje-error");
 
-fetch ("https://dummyjson.com/products/category-list")
-.then (function (response) {
-    return response.json();
-})
-.then (function(data) {
-    console.log(data);
+formulario.addEventListener("submit", function (event) {
+    event.preventDefault();
 
-let categorias = ' ';
-
-for (let i=0; i< data.length; i++) {
-    categorias += `<li>
-    <a href="category.html?category=${data[i]}" class="categorias">${data[i]}</a>
-    </li>`;
-}
-listaCategorias.innerHTML = categorias;
-})
-.catch (function (error) {
-    console.log("Error:", error);
+    if (campoEmail.value == "") {
+        mensajeError.innerText = "El campo email es obligatorio";
+    } else if (campoPassword.value == "") {
+        mensajeError.innerText = "El campo contraseña es obligatorio";
+    } else if (campoPassword.value.length < 6) {
+        mensajeError.innerText = "La contraseña debe tener al menos 6 caracteres";
+    } else {
+        localStorage.setItem("email", campoEmail.value);
+        this.submit();
+    }
 });
