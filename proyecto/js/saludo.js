@@ -6,8 +6,8 @@ if (emailGuardado != null) {
 
     listaMenu.innerHTML = `<li class="item-saludo"></li>
         ${listaMenu.innerHTML}
-        <li class="item-logout"><a href="#" class="pos">logout</a></li>`;
-        
+        <li><a href="#" class="pos">Logout</a></li>`;
+
 let itemSaludo = document.querySelector(".item-saludo");
 let itemLogin = document.querySelector(".item-login");
 let itemRegistro = document.querySelector(".item-registro");
