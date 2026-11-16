@@ -1,36 +1,14 @@
-let listaCategorias = document.querySelector('.seccion ul');
+let linkLogout = document.querySelector(".logout");
 
-fetch ("https://dummyjson.com/products/category-list")
-.then (function (response) {
-    return response.json();
-})
-.then (function(data) {
-    console.log(data);
-
-let categorias = ' ';
-
-for (let i=0; i< data.length; i++) {
-    categorias += `<li>
-    <a href="category.html?category=${data[i]}" class="categorias">${data[i]}</a>
-    </li>`;
-}
-listaCategorias.innerHTML = categorias;
-})
-.catch (function (error) {
-    console.log("Error:", error);
-});
-let formularioBuscador = document.querySelector(".buscador");
-let campoBusqueda = document.querySelector(".buscador input");
-let mensajeBuscador = document.querySelector(".mensaje-buscador");
- 
-formularioBuscador.addEventListener("submit", function (event) {
-    if (campoBusqueda.value == "") {
+if (linkLogout != null) {
+    linkLogout.addEventListener("click", function (event) {
         event.preventDefault();
-        mensajeBuscador.innerText = "El campo de busqueda no puede estar vacio";
-    } else if (campoBusqueda.value.length < 3) {
-        event.preventDefault();
-        mensajeBuscador.innerText = "El campo de busqueda debe tener al menos 3 caracteres";
-    } else {
-        this.submit();
+
+        localStorage.removeItem("email");
+
+        let menu = document.querySelector(".registro");
+        menu.innerHTML = `<li><a href="./index.html" class="pos">Home</a></li>
+        <li class="item-login"><a href="./login.html" class="pos">Login</a></li>
+        <li class="item-registro"><a href="./register.html" class="pos">Registro</a></li>`;
+    });
 }
-});
