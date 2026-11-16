@@ -21,7 +21,6 @@ body{
     padding: 0;
     font-family: Arial, sans-serif;
 }
-
 .buscador{
     display: flex;
     align-items: center;    
@@ -51,12 +50,12 @@ body{
     color: #fff;
     list-style: none;
 }
-.menu{
-    width: 15%;
-}
 .pos{
     text-decoration: none;
     color: #fff;
+}
+.registro li{
+    margin-left: 20px;
 }
 .logo{
 border-radius: 70px;
