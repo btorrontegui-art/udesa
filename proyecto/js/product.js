@@ -80,3 +80,19 @@ fetch (`https://dummyjson.com/products/${idProducto}`)
     .catch(function (error) {
         console.log("Error:", error);
     });
+
+let formularioBuscador = document.querySelector(".buscador");
+let campoBusqueda = document.querySelector(".buscador input");
+let mensajeBuscador = document.querySelector(".mensaje-buscador");
+ 
+formularioBuscador.addEventListener("submit", function (event) {
+    if (campoBusqueda.value == "") {
+        event.preventDefault();
+        mensajeBuscador.innerText = "El campo de busqueda no puede estar vacio";
+    } else if (campoBusqueda.value.length < 3) {
+        event.preventDefault();
+        mensajeBuscador.innerText = "El campo de busqueda debe tener al menos 3 caracteres";
+    } else {
+        this.submit();
+}
+});

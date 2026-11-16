@@ -13,16 +13,21 @@
             <img src="./img/logo.png" class="logo"></a>
          <h1 class="titulo">Wax Wave</h1>
        </div>
+       <div>
         <form action="./search-results.html" method="get" class="buscador">
             <input type="text" name="search" value="" placeholder="Buscar productos...">
             <button type="submit">Buscar</button>
         </form> 
+        <p class = "mensaje-buscador"></p>
+        </div>
         <nav class="menu">
         <ul class="registro">
-            <li><a href="./index.html" class="pos">Home</a></li>
-            <li><a href="./login.html" class="pos">Login</a></li>
-            <li><a href="./register.html" class="pos">Registro</a></li>
-        </ul>
+        <li><a href="./index.html" class="pos">Home</a></li>
+        <li class="item-login"><a href="./login.html" class="pos">Login</a></li>
+        <li class="item-registro"><a href="./register.html" class="pos">Registro</a></li>
+        <li class="item-saludo"></li>
+        <li class="item-logout"><a href="#" class="pos">logout</a></li>
+    </ul>
          </nav>
     </header>
     <main class="contenido">
@@ -40,10 +45,10 @@
         </section>
         </div>
     </main>
-    <script src="./js/index.js"></script>
-    </body>
-    <footer>
+     <footer>
         <p> © 2026 - Wax Wave</p> <p> Integrantes: Tiago Santos Gueudet - Benito Torrontegui </p>
     </footer>
+    <script src="./js/index.js"></script>
+    </body>
 <head>
 </html>

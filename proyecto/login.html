@@ -19,35 +19,38 @@
         </form> 
         <nav class="menu">
         <ul class="registro">
-            <li><a href="./index.html" class="pos">Home</a></li>
-            <li><a href="./login.html" class="pos">Login</a></li>
-            <li><a href="./registro.html" class="pos">Registro</a></li>
-        </ul>
+        <li><a href="./index.html" class="pos">Home</a></li>
+        <li class="item-login"><a href="./login.html" class="pos">Login</a></li>
+        <li class="item-registro"><a href="./register.html" class="pos">Registro</a></li>
+        <li class="item-saludo"></li>
+        <li class="item-logout"><a href="#" class="pos">logout</a></li>
+    </ul>
          </nav>
     </header>
     <main class="contenido">
-        <section class="login">
-            <div class="tarjeta-login">
+    <section class="login">
+        <div class="tarjeta-login">
             <h1>Ingresar</h1>
-         <form action="./index.html" method="get">
-            <div class="campos">
-            <label for="email">Email</label>
-            <input type="email" id="email" value="" name="email" placeholder="tu@email.com">
-            </div>
-            <div class="campos">
-            <label for="password">Contraseña</label>
-            <input type="password" id="password" value="" name="password" placeholder="••••••••">
-            </div>
-            <button type="submit">Ingresar</button>
+            <form action="./index.html" method="get" class="formulario-login">
+                <div class="campos">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" value="" name="email" placeholder="tu@email.com">
+                </div>
+                <div class="campos">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" value="" name="password" placeholder="••••••••">
+                </div>
+                <p class="mensaje-error"></p>
+                <button type="submit">Ingresar</button>
             </form>
-         <a href="./registro.html">No tengo cuenta</a>
+            <a href="./register.html"> No tengo cuenta </a>
         </div>
-        </section>  
-        </main>
-        <script src="./js/login.js"></script>
-    </body>
+    </section>
+</main>
     <footer>
-        <p> © 2026 - Wax Wave</p> <p> Integrantes: Tiago Santos Gueudet - Benito Torrontegui </p>
+        <p>© 2026 - Wax Wave</p> <p>Integrantes: Tiago Santos Gueudet - Benito Torrontegui</p>
     </footer>
-<head>
+    <script src="./js/login.js"></script>
+</body>
 </html>
+    

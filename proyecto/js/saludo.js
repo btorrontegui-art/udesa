@@ -19,3 +19,38 @@ listaCategorias.innerHTML = categorias;
 .catch (function (error) {
     console.log("Error:", error);
 });
+let formularioBuscador = document.querySelector(".buscador");
+let campoBusqueda = document.querySelector(".buscador input");
+let mensajeBuscador = document.querySelector(".mensaje-buscador");
+
+formularioBuscador.addEventListener("submit", function (event) {
+    if (campoBusqueda.value == "") {
+        event.preventDefault();
+        mensajeBuscador.innerText = "El campo de busqueda no puede estar vacio";
+    } else if (campoBusqueda.value.length < 3) {
+        event.preventDefault();
+        mensajeBuscador.innerText = "El campo de busqueda debe tener al menos 3 caracteres";
+    } else {
+        this.submit();
+}
+});
+
+let emailGuardado = localStorage.getItem("email");
+
+if (emailGuardado != null) {
+    let listaMenu = document.querySelector(".registro");
+
+    listaMenu.innerHTML += `
+        <li class="item-saludo"></li>
+        <li class="item-logout"><a href="#" class="pos">logout</a></li>`;
+
+    let itemSaludo = document.querySelector(".item-saludo");
+    let itemLogin = document.querySelector(".item-login");
+    let itemRegistro = document.querySelector(".item-registro");
+
+    itemSaludo.innerText = `Bienvenido: ${emailGuardado}`;
+    itemLogin.style.display = "none";
+    itemRegistro.style.display = "none";
+}
+
+

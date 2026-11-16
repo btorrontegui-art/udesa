@@ -88,3 +88,18 @@ for (let i=0; i< 10; i++) {
 .catch (function (error) {
     console.log("Error:", error);
 });
+
+let formularioBuscador = document.querySelector(".buscador");
+let campoBusqueda = document.querySelector(".buscador input");
+let mensajeBuscador = document.querySelector(".mensaje-buscador");
+ 
+formularioBuscador.addEventListener("submit", function (event) {
+    event.preventDefault();
+    if (campoBusqueda.value == "") {
+        mensajeBuscador.innerText = "El campo de busqueda no puede estar vacio";
+    } else if (campoBusqueda.value.length < 3) {
+        mensajeBuscador.innerText = "El campo de busqueda debe tener al menos 3 caracteres";
+    } else{
+        this.submit();
+    }
+});
