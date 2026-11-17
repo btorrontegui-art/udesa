@@ -57,6 +57,15 @@ body{
 .registro li{
     margin-left: 20px;
 }
+.mensaje-error{
+    color: red;
+}
+.mensaje-error2 {
+    color: red;
+}
+.mensaje-error3{
+    color: red;
+}
 .logo{
 border-radius: 70px;
 width: 100px;

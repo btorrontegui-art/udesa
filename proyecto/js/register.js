@@ -1,36 +1,35 @@
-let listaCategorias = document.querySelector('.seccion ul');
+let todoRegistro = document.querySelector(".tarjeta-login")
+let campoEmail = document.querySelector("#email")
+let campoPassword = document.querySelector("#password")
+let campoPassword2 = document.querySelector("#password2")
+let mensajeError = document.querySelector(".mensaje-error")
+let mensajeError2 = document.querySelector(".mensaje-error2")
+let mensajeError3 = document.querySelector(".mensaje-error3")
 
-fetch ("https://dummyjson.com/products/category-list")
-.then (function (response) {
-    return response.json();
-})
-.then (function(data) {
-    console.log(data);
+todoRegistro.addEventListener("submit", function (event) {
+    event.preventDefault();
 
-let categorias = ' ';
+    mensajeError.innerText = "";
+    mensajeError2.innerText = "";
+    mensajeError3.innerText = "";
+    let campoError = false;
 
-for (let i=0; i< data.length; i++) {
-    categorias += `<li>
-    <a href="category.html?category=${data[i]}" class="categorias">${data[i]}</a>
-    </li>`;
-}
-listaCategorias.innerHTML = categorias;
-})
-.catch (function (error) {
-    console.log("Error:", error);
-});
-let formularioBuscador = document.querySelector(".buscador");
-let campoBusqueda = document.querySelector(".buscador input");
-let mensajeBuscador = document.querySelector(".mensaje-buscador");
- 
-formularioBuscador.addEventListener("submit", function (event) {
-    if (campoBusqueda.value == "") {
-        event.preventDefault();
-        mensajeBuscador.innerText = "El campo de busqueda no puede estar vacio";
-    } else if (campoBusqueda.value.length < 3) {
-        event.preventDefault();
-        mensajeBuscador.innerText = "El campo de busqueda debe tener al menos 3 caracteres";
-    } else {
+    if (campoEmail.value == "") {
+        mensajeError.innerText = "El campo de email es obligatorio";
+        campoError= true;
+    } 
+    if (campoPassword.value == "") {
+        mensajeError2.innerText = "El campo de contraseña es obligatorio";
+        campoError= true;
+    } else if (campoPassword.value.length < 6) {
+        mensajeError2.innerText = "La contraseña debe tener al menos 6 caracteres";
+        campoError= true;
+    } 
+    if (campoPassword.value != campoPassword2.value) {
+        mensajeError3.innerText = "Las contraseñas no coinciden";
+        campoError= true;
+    }
+    if  (campoError == false ) {
         this.submit();
-}
-});
+    }
+})
